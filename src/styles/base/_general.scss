@@ -1,0 +1,150 @@
+.container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+.container.container-small {
+  max-width: 1460px;
+}
+@media only screen and (max-width: 1440px) {
+  .container.container-small {
+    max-width: 1100px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container.container-small {
+    max-width: 1020px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .container {
+    padding: 0 20px;
+  }
+  .container.padding-null {
+    padding: 0;
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.h1 {
+  font-size: 72px;
+  line-height: 110%;
+}
+.h2 {
+  font-size: 48px;
+  line-height: 120%;
+  color: #fff;
+}
+.h3 {
+  font-size: 36px;
+  line-height: 100%;
+  color: #b3b3b3;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.h4 {
+  font-size: 32px;
+  line-height: 100%;
+  color: #000000;
+}
+.h5 {
+  font-size: 24px;
+  line-height: 100%;
+}
+@media only screen and (max-width: 1440px) {
+  .h1 {
+    font-size: 64px;
+  }
+  .h2 {
+    font-size: 36px;
+  }
+  .h3 {
+    margin-bottom: 60px;
+  }
+  .h4 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .h1 {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .h2 {
+    font-size: 24px;
+  }
+  .h3 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .h4,
+  .h5 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .h1 {
+    font-size: 36px;
+  }
+  .h2 {
+    font-size: 18px;
+  }
+  .h3 {
+    margin-bottom: 30px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-large {
+  margin-top: 160px;
+}
+@media only screen and (max-width: 1440px) {
+  .mt-large {
+    margin-top: 130px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .mt-large {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .mt-large {
+    margin-top: 70px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// .imgOverlay {
+//   position: relative;
+// }
+.imgOverlay::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, #1a1b2e 0%, rgba(26, 27, 46, 0) 98.75%);
+  opacity: 0.8;
+  z-index: 0;
+}

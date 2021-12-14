@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  display: inline-block;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  border-radius: 63px;
+  padding: 18px 38px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-out;
+  span {
+    margin-right: 10px;
+  }
+}
+
+.button.btn-light {
+  background: #fff;
+  color: #000000;
+  font-weight: normal;
+  display: flex;
+}
+
+.button.btn-dark {
+  justify-content: space-between;
+  background: #000000;
+  color: #fff;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 574px) {
+  .button {
+    font-size: 12px;
+    padding: 12px 26px;
+    max-width: 170px;
+  }
+  .btn-poject {
+    max-width: 130px;
+  }
+}

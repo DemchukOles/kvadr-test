@@ -1,0 +1,188 @@
+/* PROCESS */
+.process-list {
+    margin-bottom: 20px;
+}
+.process-item {
+    color: #000000;
+    padding: 50px 0;
+    position: relative;
+}
+.process-item::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 140px);
+    height: 1px;
+    background: #DEDEDE;
+}
+.process-item:last-child:before{
+    display: none;
+}
+.process-title {
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.process-counter{
+    display: inline-block;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+}
+.process-info{
+    width: calc(100% - 140px);
+    padding-right: 60px;
+}
+.process-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -20px;
+}
+.process-icon:before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #555555;
+}
+.process-icon:after {
+    content: "";
+    width: 1px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #555555;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.process-text {
+    font-family: "Manrope";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #555555;
+    padding-top: 30px;
+    padding-left: 140px;
+    padding-right: 50px;
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s ease-out;
+}
+.process-item.open .process-counter{
+    color: #FF8080;
+}
+.process-item.open .process-icon:after,
+.process-item.open .process-icon:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #FF8080;
+}
+.process-item.open .process-text {
+    display: block;
+    height: auto;
+}
+
+@media only screen and (max-width: 1440px){
+    .process-item{
+        padding: 40px 0;
+    }
+    .process-counter{
+        font-size: 16px;
+    }
+    .process-info, .process-item::before{
+        width: calc(100% - 120px);
+    }
+    .process-icon{
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+    }
+    .process-icon:before{
+        width: 30px;
+    }
+    .process-icon:after{
+        height: 30px;
+    }
+    .process-text{
+        font-size: 16px;
+        padding-top: 25px;
+        padding-left: 120px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .process-info, .process-item::before{
+        width: calc(100% - 90px);
+    }
+    .process-text{
+        padding-left: 90px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .process-item{
+        padding: 30px 0;
+    }
+    .process-info, .process-item::before{
+        width: calc(100% - 60px);
+    }
+    .process-text{
+        padding-left: 60px;
+    }
+}
+@media only screen and (max-width: 574px){
+    .process-list{
+        margin-bottom: 10px;
+    }
+    .process-counter{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .process-title .h4{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .process-info, .process-item::before{
+        width: calc(100% - 50px);
+    }
+    .process-info{
+        padding-right: 30px;
+    }
+    .process-text{
+        padding-left: 0;
+        padding-top: 15px;
+        padding-right: 30px;
+    }
+    .process-icon{
+        width: 15px;
+        height: 15px;
+        margin-top: -7px;
+    }
+    .process-icon:before{
+        width: 15px;
+    }
+    .process-icon:after{
+        height: 15px;
+    }
+}
+
+/* END PROCESS */

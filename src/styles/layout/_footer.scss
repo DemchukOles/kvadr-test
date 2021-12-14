@@ -1,0 +1,218 @@
+/* FOOTER */
+.footer {
+  background: #000000;
+  position: relative;
+}
+.footer-container {
+  padding: 70px 126px 25px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.footer .logo {
+  width: 200px;
+}
+.footer-info {
+  display: flex;
+  padding-bottom: 156px;
+}
+.footer-listBox {
+  display: flex;
+  justify-content: space-around;
+  width: calc(100% - 200px);
+  padding-left: 230px;
+}
+.footer-listBox-item {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 10px;
+}
+.footer-listBox-item li {
+  font-size: 18px;
+  line-height: 150%;
+  color: #555555;
+  transition: all 0.3s ease-out;
+  padding-bottom: 10px;
+}
+.footer-listBox-item li a {
+  color: inherit;
+}
+.footer-listBox-item .footer-title {
+  color: #aeaeae;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease-out;
+  padding-bottom: 25px;
+}
+.footer-listBox-item .footer-title.pt-25 {
+  padding-top: 25px;
+}
+
+.footer-listBox-item li:hover,
+.footer-title:hover {
+  color: #fff;
+}
+.footer-iconList {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer-iconList a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.footer-iconList img {
+  display: block;
+  width: 30px;
+  height: auto;
+  max-height: 30px;
+  object-fit: contain;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  color: #555555;
+}
+.footer-bottom span:first-child {
+  display: block;
+  padding-right: 400px;
+}
+.footer-decorate {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  font-family: "Manrope";
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 115px;
+  display: block;
+  background: transparent;
+}
+.footer-decorate span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  position: relative;
+}
+.footer-decorate::after {
+  content: "";
+  width: 1px;
+  height: 54px;
+  background: #fff;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transform: translateX(100%);
+}
+.footer-general .footer-iconList {
+  display: none;
+}
+@media only screen and (max-width: 1440px) {
+  .footer-container {
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+  .footer .logo {
+    width: 150px;
+  }
+  .footer-info {
+    padding-bottom: 88px;
+  }
+  .footer-listBox {
+    justify-content: flex-start;
+    padding-left: 150px;
+    width: calc(100% - 150px);
+  }
+  .footer-listBox-item {
+    padding-left: 30px;
+  }
+  .footer-listBox-item li {
+    font-size: 16px;
+  }
+  .footer-iconList {
+    margin-top: 30px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .footer-bottom span:first-child {
+    padding-right: 200px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .footer .logo {
+    width: 114px;
+  }
+  .footer-listBox {
+    width: calc(100% - 114px);
+    flex-wrap: wrap;
+  }
+  .footer-listBox {
+    padding-left: 20px;
+  }
+  .footer-bottom span:first-child {
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .footer-container {
+    padding: 40px 10px 10px;
+  }
+  .footer-listBox {
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 34px;
+  }
+  .footer-listBox-item {
+    padding: 10px;
+    width: 150px;
+  }
+  .footer-listBox-item:last-child {
+    padding-top: 25px;
+    display: none;
+  }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-bottom span:first-child {
+    padding-right: 30px;
+  }
+
+  .footer-decorate,
+  .footer-listBox-item .footer-iconList {
+    display: none;
+  }
+  .footer-general {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-general .footer-iconList {
+    display: flex;
+    margin-top: 0;
+  }
+  .footer-info {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-bottom: 34px;
+  }
+}
+@media only screen and (min-width: 574px) {
+  .footer-mobile-hidden {
+    display: none;
+  }
+}
+/* END FOOTER */

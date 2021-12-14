@@ -1,0 +1,136 @@
+/* SERVICES */
+.servicesBox {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.servicesBox-item {
+  width: 25%;
+  position: relative;
+  height: 748px;
+}
+.servicesBox-item-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.servicesBox-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.servicesBox-info {
+  position: absolute;
+  background: #000000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 50px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.4s ease-out;
+}
+.servicesBox-info .h5 {
+  font-weight: 600;
+  line-height: 130%;
+}
+.servicesBox-info .button {
+  opacity: 0;
+}
+.servicesBox-info:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.servicesBox-info:hover .button {
+  opacity: 1;
+}
+.servicesBox-number {
+  font-family: "Manrope";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 220px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .projectsBox-desctop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .projectsBox-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .servicesBox {
+    margin-bottom: 60px;
+  }
+  .servicesBox-item {
+    height: 560px;
+  }
+  .servicesBox-info {
+    padding-bottom: 50px;
+  }
+  .servicesBox-number {
+    font-size: 16px;
+    margin-bottom: 154px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .servicesBox {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .servicesBox-item {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .servicesBox-info {
+    flex-direction: row;
+    align-items: center;
+  }
+  .servicesBox-info > div {
+    display: flex;
+    align-items: center;
+  }
+  .servicesBox-number {
+    margin-bottom: 0;
+    padding-right: 24px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .servicesBox {
+    margin-bottom: 40px;
+  }
+  .servicesBox-info {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .servicesBox-info > div {
+    flex-wrap: wrap;
+  }
+  .servicesBox-info .h5 {
+    font-size: 18px;
+  }
+  .servicesBox-number {
+    width: 100%;
+    padding-bottom: 45px;
+  }
+}
+/* END SERVICES */

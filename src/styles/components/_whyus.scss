@@ -1,0 +1,120 @@
+/* WHY US */
+.imgCard {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 170px;
+  padding-bottom: 130px;
+  position: relative;
+}
+.imgCard .container {
+  position: relative;
+  z-index: 1;
+}
+.imgCard .h2 {
+  max-width: 680px;
+  padding-bottom: 60px;
+}
+.imgCard-box {
+  border-top: 1px solid #fff;
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.imgCard-list {
+  display: flex;
+  margin-top: 60px;
+}
+.imgCard-list:first-child {
+  margin-top: 0;
+}
+.imgCard-item {
+  margin-left: 70px;
+}
+.imgCard-item span {
+  display: block;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+}
+.imgCard-item span:first-child {
+  font-family: "Oswald";
+  font-size: 72px;
+  line-height: 100%;
+  padding-bottom: 5px;
+}
+.imgCard-item span:last-child {
+  font-family: "Manrope";
+  font-size: 18px;
+  line-height: 120%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .imgCard {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .imgCard .h2 {
+    max-width: 510px;
+    padding-bottom: 40px;
+  }
+  .imgCard-box {
+    padding-top: 80px;
+  }
+  .imgCard-list {
+    margin-top: 46px;
+  }
+  .imgCard-item {
+    margin-left: 110px;
+  }
+  .imgCard-item span:first-child {
+    font-size: 64px;
+  }
+  .imgCard-item span:last-child {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container.container-small {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .imgCard {
+    padding-bottom: 230px;
+  }
+  .imgCard .h2 {
+    padding-bottom: 50px;
+  }
+  .imgCard-box {
+    padding-top: 120px;
+  }
+  .imgCard-item {
+    margin-left: 36px;
+  }
+  .imgCard-item span:first-child {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .imgCard {
+    opacity: 0.8;
+    background-position: bottom left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .imgCard .h2 {
+    padding-bottom: 25px;
+  }
+  .imgCard-box {
+    flex-direction: column;
+    padding-top: 45px;
+  }
+  .imgCard-box .h2 {
+    padding-bottom: 100px;
+  }
+  .imgCard-item:first-child {
+    margin-left: 0;
+  }
+}
+/* END WHY US */
