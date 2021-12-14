@@ -1,11 +1,11 @@
-import React from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import getAboutUs from "../hooks/useAboutUsQuery"
-import Button from "./buttons/Button"
+import getAboutUs from "../hooks/useAboutUsQuery";
+import Button from "./buttons/Button";
 
 export default function AboutUs() {
-  const { AboutUsComponent } = getAboutUs()
+  const { AboutUsComponent } = getAboutUs();
   const {
     titleSection,
     philosophy,
@@ -15,7 +15,7 @@ export default function AboutUs() {
     link,
     name,
     color,
-  } = AboutUsComponent
+  } = AboutUsComponent;
 
   return (
     <section className="container container-small mt-large padding-null">
@@ -26,19 +26,13 @@ export default function AboutUs() {
           <p>{whatWeDo}</p>
           <Button name={name} color={color} link={link} />
         </div>
-        <div className="artBox-imgWrap">
-          <GatsbyImage
-            image={getImage(imgDesc)}
-            className="img-desc"
-            alt="AboutUs"
-          />
-          <GatsbyImage
-            image={getImage(imgMob)}
-            className="img-mob"
-            alt="AboutUs"
-          />
+        <div className="artBox-imgWrap img-desc">
+          <GatsbyImage image={getImage(imgDesc)} alt="AboutUs" />
+        </div>
+        <div className="artBox-imgWrap img-mob">
+          <GatsbyImage image={getImage(imgMob)} alt="AboutUs" />
         </div>
       </div>
     </section>
-  )
+  );
 }
